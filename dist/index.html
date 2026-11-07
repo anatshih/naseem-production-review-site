@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="تجربة تطبيقية لخطوات مختارة من برنامج إنتاج النسيم ببيانات تجريبية.">
+    <title>تجربة برنامج الإنتاج · النسيم</title>
+    <link rel="stylesheet" href="./site.css">
+    <script>
+        const previousLink = new URLSearchParams(location.search);
+        if (previousLink.has("case") || previousLink.get("view") === "sheet") {
+            location.replace("./demo.html" + location.search + location.hash);
+        }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+    <header class="home-header">
+        <a class="brand" href="./index.html">
+            <span class="brand-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l6 4V9l6 4V5h4l2 16H3Z"/><path d="M7 17h1m4 0h1m4 0h1"/></svg>
+            </span>
+            <span><strong>النسيم</strong><small>تجربة برنامج الإنتاج</small></span>
+        </a>
+    </header>
+    <main id="main" class="review-home">
+        <section class="panel home-panel" aria-labelledby="home-heading">
+            <p class="eyebrow">لفريق شركة النسيم</p>
+            <h1 id="home-heading">تجربة برنامج الإنتاج</h1>
+            <div class="home-scope" aria-labelledby="scope-heading">
+                <h2 id="scope-heading">هذا الموقع مخصّص لتجربة خطوات محددة</h2>
+                <p>يعرض محاكاة مستقلة لخطوات مختارة باستخدام بيانات تجريبية. البرنامج الفعلي تطبيق منفصل.</p>
+            </div>
+            <p>افتح الدليل المطبوع واتبع الإرشادات في كل حالة. سجّل نتيجة كل خطوة وملاحظتك في الخانة المقابلة.</p>
+            <div class="actions">
+                <a class="button primary" href="./demo.html">ابدأ التجربة</a>
+                <a class="button secondary" href="./guide.html">فتح دليل المراجعة المطبوع</a>
+            </div>
+        </section>
+        <section class="panel home-panel" aria-labelledby="review-scope">
+            <h2 id="review-scope">ما الذي يتناوله الموقع؟</h2>
+            <ul class="home-list">
+                <li>خطوات الطلبية والأدوار من التسجيل إلى التوريد.</li>
+                <li>ورقة التصنيع A4 وبيانات القص المطلوبة.</li>
+                <li>إجمالي المواد لبند فيه ثلاثة أبواب متطابقة.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
